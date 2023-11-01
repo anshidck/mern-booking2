@@ -1,7 +1,7 @@
 const express = require('express');
 const Place = require('../models/placeModel')
 const asyncHandler = require('express-async-handler')
-const { protect } = require('../middleware/authMiddleware')
+const { protect } = require('../middleware/authmiddleware')
 const router = express.Router()
 
 router.post('/' , protect ,asyncHandler(async (req, res) => {

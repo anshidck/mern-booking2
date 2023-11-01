@@ -1,6 +1,6 @@
 const express = require('express')
 const Booking = require('../models/bookingModel');
-const { protect } = require('../middleware/authMiddleware');
+const { protect } = require('../middleware/authmiddleware');
 const asyncHandler = require('express-async-handler')
 const router = express.Router()
 
